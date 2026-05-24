@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Denver Toll Calculator",
+    "slug": "denver-toll-calculator",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to calculate tolls while driving.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to calculate tolls while driving."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermissions": true
+        }
+      ]
+    ]
+  }
+}
